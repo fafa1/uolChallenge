@@ -1,0 +1,10 @@
+.container {
+  &__typography {
+    p {
+      font-size: 1.1rem;
+      > span {
+        font-weight: bold;
+      }
+    }
+  }
+}
