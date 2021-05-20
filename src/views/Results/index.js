@@ -12,14 +12,19 @@ const Results = () => {
   const [dataRepos, setDataRespos] = useState([]);
 
   const onSubmitSearch = useCallback(async () => {
-    const name = ref.current.value;
-    const result = (await axios.get(`https://api.github.com/users/${name}`))?.data;
-    const arr = [];
-    arr.push(result);
-    setDataRespos(arr);
-    console.log(result);
-
-    setLogin(result.login);
+    try {
+      const name = ref.current.value;
+      if (name) {
+        const result = (await axios.get(`https://api.github.com/users/${name}`))?.data;
+        setDataRespos([result]);
+        console.log(result);
+        setLogin(result.login);
+      } else {
+        setDataRespos([]);
+      }
+    } catch (error) {
+      console.error(error);
+    }
   }, []);
 
   const getReposUser = async () => {
@@ -36,7 +41,7 @@ const Results = () => {
     <>
       <Search ref={ref} handleSearch={onSubmitSearch} />
       <br />
-      <Grid container lg={12}>
+      <Grid container item lg={12}>
         <Grid item lg={12} container direction="row" justify="center">
           <div style={{ display: "flex", marginBottom: 20 }}>
             <Button
@@ -53,6 +58,7 @@ const Results = () => {
           </div>
         </Grid>
       </Grid>
+
       <CardBox data={dataRepos} />
     </>
   );
