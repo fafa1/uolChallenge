@@ -12,10 +12,6 @@ Foi pensado também na facilidade de uso do sistema.
 
 Estou aberto a melhorias.
 
-## Available Scripts
-
-In the project directory, you can run:
-
 ### Configuração para Executar o projeto
 
 1. Fazer o Clone deste projeto
