@@ -18,12 +18,15 @@ In the project directory, you can run:
 
 ### Configuração para Executar o projeto
 
-1. Executar o comando npm i ou yarn na raiz do projeto
-2. Executar o comando yarn start ou npm start para rodar o projeto na porta 3000
+1. Fazer o Clone deste projeto
+2. Executar o comando npm i ou yarn na raiz do projeto
+3. Executar o comando yarn start ou npm start para rodar o projeto na porta 3000
 
 ### Estrutura
 
 O projeto contém 3 componentes atómicos que são o **Button**, **Card** e o **Search**
 um arquivo de Views composto pelo compomente de **DetailUser** e **Results** o componente DetailUser apresenta as informações relacionadas aos detalhes do usuários que é possível ser visto ao clicar em detalhes.
 
-Em results contém as informações relacionadas ao resultado ao digitar os usuários no campo de pesquisa e os repositórios deste usuário onde contém um link de cada repositório respectivamente.
+Em results contém as informações relacionadas ao resultado ao digitar os usuários no campo de pesquisa e os repositórios deste usuário (ao clicar no botão de repos) onde contém um link de cada repositório respectivamente.
+
+Foi utilizado como framework UI para construção dos componentes o Material-ui e o axios para facilitar nas requisições a API.
