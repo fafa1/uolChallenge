@@ -15,7 +15,7 @@ Estou aberto a melhorias.
 ### Configuração para Executar o projeto
 
 1. Fazer o Clone deste projeto
-2. Executar o comando npm i ou yarn na raiz do projeto
+2. Executar o comando npm i ou yarn na raiz do projeto para instalação de todos os pacotes.
 3. Executar o comando yarn start ou npm start para rodar o projeto na porta 3000
 
 ### Estrutura
