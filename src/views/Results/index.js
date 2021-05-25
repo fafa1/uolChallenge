@@ -5,6 +5,7 @@ import axios from "axios";
 
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
+import swal from "sweetalert";
 
 const Results = () => {
   const ref = useRef("");
@@ -29,10 +30,18 @@ const Results = () => {
 
   const getReposUser = async () => {
     try {
-      const result = (await axios.get(`https://api.github.com/users/${login}/repos`)).data;
-      setDataRespos(result);
-      console.log(result);
+      if (login) {
+        const result = await axios.get(`https://api.github.com/users/${login}/repos`);
+        if (result.status === 200) {
+          setDataRespos(result.data);
+          setLogin("");
+          console.log(result);
+        }
+      }
     } catch (error) {
+      swal("Error!", "Error na operação", "error", {
+        button: "OK",
+      });
       console.error(error);
     }
   };
