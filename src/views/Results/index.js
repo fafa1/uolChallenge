@@ -35,7 +35,6 @@ const Results = () => {
         if (result.status === 200) {
           setDataRespos(result.data);
           setLogin("");
-          console.log(result);
         }
       }
     } catch (error) {
