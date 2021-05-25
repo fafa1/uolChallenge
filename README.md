@@ -16,10 +16,14 @@ Estou aberto a melhorias.
 
 In the project directory, you can run:
 
-### `yarn start`
+### Configuração para Executar o projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Executar o comando npm i ou yarn na raiz do projeto
+2. Executar o comando yarn start ou npm start para rodar o projeto na porta 3000
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Estrutura
+
+O projeto contém 3 componentes atómicos que são o **Button**, **Card** e o **Search**
+um arquivo de Views composto pelo compomente de **DetailUser** e **Results** o componente DetailUser apresenta as informações relacionadas aos detalhes do usuários que é possível ser visto ao clicar em detalhes.
+
+Em results contém as informações relacionadas ao resultado ao digitar os usuários no campo de pesquisa e os repositórios deste usuário onde contém um link de cada repositório respectivamente.
