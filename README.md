@@ -26,3 +26,4 @@ um arquivo de Views composto pelo compomente de **DetailUser** e **Results** o c
 Em results contém as informações relacionadas ao resultado ao digitar os usuários no campo de pesquisa e os repositórios deste usuário (ao clicar no botão de repos) onde contém um link de cada repositório respectivamente.
 
 Foi utilizado como framework UI para construção dos componentes o Material-ui e o axios para facilitar nas requisições a API.
+Foi utilizado para os alerts, a biblioteca swal.
