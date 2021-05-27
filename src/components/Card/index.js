@@ -27,7 +27,7 @@ const CardBox = ({ data }) => {
               <Card className="container__card">
                 <CardActionArea>
                   {value.avatar_url && (
-                    <img style={{ height: 390 }} src={value.avatar_url} alt="imagem perfil"></img>
+                    <img style={{ width: "100%" }} src={value.avatar_url} alt="imagem perfil"></img>
                   )}
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
