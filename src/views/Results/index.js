@@ -60,9 +60,9 @@ const Results = () => {
             >
               Repos
             </Button>
-//             <Button variant="contained" color="primary">
-//               Starred
-//             </Button>
+            {/* <Button variant="contained" color="primary">
+              Starred
+            </Button> */}
           </div>
         </Grid>
       </Grid>
